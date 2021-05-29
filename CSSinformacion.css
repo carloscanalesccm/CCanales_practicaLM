@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  position: absolute;
+  width: 100%;
+  float:left;
+  color: white;
+}
+a{
+  color:white;
+}
+
+#cabecera {
+  height: 100vh;
+}
+#escudo {
+  width: 100%;
+  height: 105%;
+  position: absolute;
+  object-fit: cover;
+
+}
+
+#midImagenes{
+  width:100%;
+  margin-left:8%;
+}
+
+#eurocopa12{
+  width:90%;
+
+}
+#mundial{
+  width:50%;
+  
+}
+#titulo {
+  color:black;
+  position: absolute;
+
+}
+#cabInfo{
+  width: 100%;
+  text-align: center;
+
+}
+#info {
+  width: 100%;
+  background:rgba(211, 211, 7);
+  min-height: 100%;
+  z-index: 2;
+  position: absolute;
+}
+#midImagenes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 60vh;
+  text-align: center;
+}
+
+#texto {
+  text-align: center;
+  padding-left:15%;
+  padding-right: 15%;
+  margin-top:2%;
+}
+
+footer{
+  color:black;  
+  text-align:center;
+}
+
+a{
+  text-decoration:none;
+}
+a:hover{
+  background-color: black;
+  color: yellow;
+}
+
+#p1{
+  
+  margin-right:35%
+}
+#arriba{
+  margin-left: 35%;
+}
+
+@media screen and (max-width: 1113px) {
+
+
+  nav{
+    background-color: black;
+    position: absolute;
+    top: 2000px;
+    width: 100%;
+    padding-top:1%;
+    padding-bottom:1%;    
+    
+  }
+  a:hover{
+    background-color: black;
+    color: yellow;
+  }
+  
+  #p1{
+
+    margin-left:2%;
+  }
+ 
+  #arriba{
+    padding-right:2%;
+
+  }
+
+  #info {
+    width: 100%;
+    background:rgba(211, 211, 7);
+    min-height: 105%;
+    z-index: 2;
+    position: absolute;
+  }
+
+}
+
+@media screen and (max-width: 948px) {
+  #p1{
+    text-align: center;
+    width:100%;
+    float:left;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding-left:0%;
+    padding-top:1%;
+    padding-bottom:1%;
+
+  }
+  #p3{
+    text-align: center;
+    width:100%;
+    float:left;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding-top:1%;
+    padding-bottom:1%;
+
+  }
+  #arriba{
+    text-align: center;
+    width:100%;
+    float:left;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding-top:1%;
+    padding-bottom:1%;
+  }
+
+  a:hover{
+    background-color: yellow;
+    color: black;
+  }
+}

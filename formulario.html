@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Formulario </title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="CSSformulario.css" type="text/css"/>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+
+<body>
+	<header><h1>ELIJA SU ONCE</h1>	</header> 
+	<section id="formulario">
+		<article id="izquierda">
+			<h3 id="cabForm"> Rellene los siguientes datos y elija el equipo titular que sacaría si fuera Luis Enrique.</h3>
+			<form action="http://localhost/CCanales_practicaLM/conexion.php" method="post" onsubmit="return validacion()">
+			<label for="nombre"> NOMBRE:</label>
+			<input type="text" id="nombre" name="nombre"  required><br>
+			<label for="apellidos"> APELLIDOS:</label>
+			<input type="text" id="apellidos" name="apellidos"  required><br>
+			<label for="email"> Email (Opcional):</label>
+			<input type="email" id="email" name="email">
+
+			<h3 id="rellene"> RELLENE SU ONCE A CONTINUACIÓN:</h3>
+			<p> PORTERO:</p>
+				  <input type="radio" id="por1" name="portero" value="por1">
+				  <label for="por1">David De Gea</label><br>
+				  <input type="radio" id="por2" name="portero" value="por2">
+				  <label for="por2">Unai Simón</label><br>
+				  <input type="radio" id="por3" name="portero" value="por3">
+				  <label for="por3">Robert Sánchez</label> <br><br>
+			<p> Lateral Derecho:</p>
+				  <input type="radio" id="ld1" name="ld" value="ld1">
+				  <label for="ld1">Marcos Llorente</label><br>
+				  <input type="radio" id="ld2" name="ld" value="ld2">
+				  <label for="ld2">Cesar Azpilicueta</label>	<br><br>		  
+			<p> Defensas (Seleccione 2):</p>
+				<input type="checkbox" id="dfc1" name="dfc" value="dfc1">
+				<label for="dfc1"> Diego Llorente</label><br>
+				<input type="checkbox" id="dfc2" name="dfc" value="dfc2">
+				<label for="dfc2"> Pau Torres</label><br>
+				<input type="checkbox" id="dfc3" name="dfc" value="dfc3">
+				<label for="dfc3"> Eric García</label><br>
+				<input type="checkbox" id="dfc4" name="dfc" value="dfc4">
+				<label for="dfc4"> Aymeric Laporte</label><br><br>			
+			<p> Lateral Izquierdo:</p>
+				  <input type="radio" id="li1" name="li" value="li1">
+				  <label for="li1">Jordi Alba</label><br>
+				  <input type="radio" id="li2" name="li" value="li2">
+				  <label for="li2">José Gaya</label><br><br>
+		</article>
+		<article id="derecha">
+			<p> Mediocentros (Seleccione 3):</p>
+				<input type="checkbox" id="mc1" name="mc" value="mc1">
+				<label for="mc1"> Fabián Ruiz</label><br>
+				<input type="checkbox" id="mc2" name="mc" value="mc2">
+				<label for="mc2"> Koke</label><br>
+				<input type="checkbox" id="mc4" name="mc" value="mc4">
+				<label for="mc4"> Rodri</label><br>
+				<input type="checkbox" id="mc5" name="mc" value="mc5">
+				<label for="mc5"> Sergio Busquets</label><br>
+				<input type="checkbox" id="mc6" name="mc" value="mc6">
+				<label for="mc6"> Sergio Canales</label><br>
+				<input type="checkbox" id="mc7" name="mc" value="mc7">
+				<label for="mc7"> Pedri</label><br>
+				<input type="checkbox" id="mc8" name="mc" value="mc8">
+				<label for="mc8"> Thiago Alcántara</label><br><br>	
+			<p> Extremo Izquierdo:</p>
+				  <input type="radio" id="ei1" name="ei" value="ei1">
+				  <label for="ei1">Oyarzabal</label><br>
+				  <input type="radio" id="ei2" name="ei" value="ei2">
+				  <label for="ei2">Adama Traoré</label><br><br>		
+			<p> Extremo Derecho:</p>
+				  <input type="radio" id="ed1" name="ed" value="ed1">
+				  <label for="ed1">Ferrán Torres</label><br>
+				  <input type="radio" id="ed2" name="ed" value="ed2">
+				  <label for="ed2">Dani Olmo</label><br><br>	
+			<p> Delantero Centro:</p>
+				  <input type="radio" id="dc1" name="dc" value="dc1">
+				  <label for="dc1">Álvaro Morata</label><br>
+				  <input type="radio" id="dc2" name="dc" value="dc2">
+				  <label for="dc2">Gerard Moreno</label> <br><br>
+				  
+			<button type="submit" name="envia">Enviar Formulario</button> <br><br>
+			
+			</form>
+
+			<script>
+			function validacion() {
+				var x = document.getElementById("nombre").value;
+				var y = document.getElementById("apellidos").value;				
+				if ( x = "") {
+
+				  alert('[ERROR] El nombre debe estar indicado');
+				  return false;
+				}
+				else if ( y = "") {
+				  alert('[ERROR] Los apellidos deben estar indicados');
+				  return false;
+				}
+				alert('Se han recogido sus datos personales');
+				return true;
+			  }
+			</script>
+		</article>
+	</section>
+	<aside>
+		<h4 id="cabMenu"> Si lo desea, puede usar el siguiente menú para conocer información sobre la selección española, o bien regresar a la página principal:</h4>
+		<nav>
+			<a id="p1" href="principal.html"> PRINCIPAL</a> <br>
+			<a id="p3" href="informacion.html"> LOGROS</a> <br>
+		</nav>
+	</aside>
+
+</body>
+</html>
